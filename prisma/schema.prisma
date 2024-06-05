@@ -30,7 +30,7 @@ model Post {
 model Category {
   id       Int      @id @default(autoincrement())
   name     String
-  Post     Post[]
+  posts    Post[]
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
 }
@@ -38,7 +38,7 @@ model Category {
 model Tag {
   id       Int      @id @default(autoincrement())
   name     String
-  post     Post[]
+  posts    Post[]
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
 }
