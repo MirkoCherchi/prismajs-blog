@@ -1,1 +1,7 @@
-const { createPost } = require("./utils/crud-post.js");
+const {
+  createPost,
+  readPost,
+  readPosts,
+  updatePost,
+  deletePost,
+} = require("./utils/crud-post.js");
